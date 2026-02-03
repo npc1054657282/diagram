@@ -1,87 +1,158 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.6">
   <diagram name="第 1 页" id="t6yNAV1bAnTxppkuvk-x">
     <mxGraphModel dx="1380" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="pre_source" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacing=10;fontColor=#333333;dashed=1;dashPattern=1 2;" value="&lt;b&gt;Precursor A: 源码与知识窃取&lt;/b&gt;&#xa;Source Code / Arch Knowledge Theft&#xa;---------------------------------------------&#xa;(Origin: Coding Phase / Repositories)" vertex="1">
-          <mxGeometry height="80" width="220" x="300" y="60" as="geometry" />
+        <mxCell id="pre_source" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacing=10;fontColor=#333333;dashed=1;dashPattern=1 2;" value="&lt;b&gt;源码与知识窃取&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="250" y="350" as="geometry" />
         </mxCell>
-        <mxCell id="arrow_pre_a" edge="1" parent="1" source="col2" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;strokeColor=#999999;" target="pre_source" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="pre_cred" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacing=10;fontColor=#333333;dashed=1;dashPattern=1 2;" value="&lt;b&gt;Precursor B: 凭证与密钥窃取&lt;/b&gt;&#xa;Credential / Signing Key Theft&#xa;---------------------------------------------&#xa;(Origin: CI/CD Env / Dev Accounts)" vertex="1">
-          <mxGeometry height="80" width="220" x="540" y="60" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow_pre_b" edge="1" parent="1" source="col3" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;strokeColor=#999999;" target="pre_cred" value="">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="pre_cred" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacing=10;fontColor=#333333;dashed=1;dashPattern=1 2;" value="&lt;b&gt;凭证与密钥窃取&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="370" y="350" as="geometry" />
         </mxCell>
         <mxCell id="col1" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="I. 需求与设计&#xa;(Requirements &amp; Design)" vertex="1">
-          <mxGeometry height="420" width="220" x="60" y="180" as="geometry" />
+          <mxGeometry height="160" width="200" x="40" y="200" as="geometry" />
         </mxCell>
         <mxCell id="list1" parent="col1" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="- 禁用安全特性 (e.g., XZ IFUNC)&#xa;- 算法后门设计 (Dual_EC_DRBG)&#xa;- 逻辑设计缺陷&#xa;- 依赖选型投毒" vertex="1">
-          <mxGeometry height="380" width="220" y="40" as="geometry" />
+          <mxGeometry height="120" width="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-49" edge="1" parent="1" source="col2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="i_cE2kLSGhIXNoHwnVfD-26">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="col2" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="II. 编程&#xa;(Coding / SCM)" vertex="1">
-          <mxGeometry height="420" width="220" x="300" y="180" as="geometry" />
+          <mxGeometry height="160" width="200" x="40" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="list2" parent="col2" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;[Dependencies]&lt;/b&gt;&#xa;- Typosquatting / 依赖混淆&#xa;- 恶意依赖包引入&#xa;&#xa;&lt;b&gt;[Source Code]&lt;/b&gt;&#xa;- 恶意代码提交 (Insider)&#xa;- 隐藏字符/同形异义字&#xa;- 恶意工件提交 (Binary Blob)&#xa;&#xa;&lt;i&gt;* 前置关联: 可能被 [Precursor A] 增强&lt;/i&gt;" vertex="1">
-          <mxGeometry height="380" width="220" y="40" as="geometry" />
+        <mxCell id="list2" parent="col2" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;[Dependencies]&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;* 前置关联: 可能被 [Precursor A] 增强&lt;/i&gt;" vertex="1">
+          <mxGeometry height="120" width="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-50" edge="1" parent="1" source="col3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="i_cE2kLSGhIXNoHwnVfD-28">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="col3" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="III. 构建与集成&#xa;(Build &amp; CI/CD)" vertex="1">
-          <mxGeometry height="420" width="220" x="540" y="180" as="geometry" />
+          <mxGeometry height="160" width="200" x="280" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="list3" parent="col3" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;[Environment]&lt;/b&gt;&#xa;- 构建环境篡改 (SolarWinds)&#xa;- 编译器/构建工具投毒&#xa;&#xa;&lt;b&gt;[Process]&lt;/b&gt;&#xa;- 流水线脚本注入 (Script Injection)&#xa;- 动态拉取恶意资源&#xa;- 绕过测试步骤&#xa;&#xa;&lt;i&gt;* 前置关联: [Precursor A] 用于针对性注入&lt;/i&gt;" vertex="1">
-          <mxGeometry height="380" width="220" y="40" as="geometry" />
+        <mxCell id="list3" parent="col3" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;[Environment]&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;* 前置关联: [Precursor A] 用于针对性注入&lt;/i&gt;" vertex="1">
+          <mxGeometry height="120" width="200" y="40" as="geometry" />
         </mxCell>
         <mxCell id="col4" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="IV. 开发侧交付&#xa;(Packaging &amp; Signing)" vertex="1">
-          <mxGeometry height="420" width="220" x="780" y="180" as="geometry" />
+          <mxGeometry height="160" width="200" x="520" y="200" as="geometry" />
         </mxCell>
-        <mxCell id="list4" parent="col4" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;[Integrity]&lt;/b&gt;&#xa;- 恶意制品签名 &lt;b&gt;[Ref: Precursor B]&lt;/b&gt;&#xa;- 签名时间戳伪造&#xa;&#xa;&lt;b&gt;[Artifacts]&lt;/b&gt;&#xa;- 打包过程中替换文件&#xa;- 影子分发 (Shadow Distribution)&#xa;&#xa;&lt;i&gt;注: 此阶段强依赖凭证失陷&lt;/i&gt;" vertex="1">
-          <mxGeometry height="380" width="220" y="40" as="geometry" />
+        <mxCell id="list4" parent="col4" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;br&gt;&lt;br&gt;&lt;i&gt;注: 此阶段强依赖凭证失陷&lt;/i&gt;" vertex="1">
+          <mxGeometry height="120" width="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-52" edge="1" parent="1" source="col5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="i_cE2kLSGhIXNoHwnVfD-32">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="col5" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="V. 分发与传播&#xa;(Distribution)" vertex="1">
-          <mxGeometry height="420" width="220" x="1020" y="180" as="geometry" />
+          <mxGeometry height="160" width="200" x="520" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="list5" parent="col5" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;[Platform]&lt;/b&gt;&#xa;- 账号接管发布 &lt;b&gt;[Ref: Precursor B]&lt;/b&gt;&#xa;- 抢注过期维护包&#xa;- 镜像源/CDN 污染&#xa;&#xa;&lt;b&gt;[Social Eng]&lt;/b&gt;&#xa;- 恶意包伪装 (Typosquatting)&#xa;- 声誉伪造 (Reputation Jacking)&#xa;&#xa;&lt;i&gt;注: 攻击在此处从供应链进入用户侧&lt;/i&gt;" vertex="1">
-          <mxGeometry height="380" width="220" y="40" as="geometry" />
+        <mxCell id="list5" parent="col5" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;[Platform]&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;注: 攻击在此处从供应链进入用户侧&lt;/i&gt;" vertex="1">
+          <mxGeometry height="120" width="200" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="router" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Delivery to User" vertex="1">
-          <mxGeometry height="50" width="140" x="1300" y="365" as="geometry" />
-        </mxCell>
-        <mxCell id="link_dist_route" edge="1" parent="1" source="col5" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;" target="router" value="">
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-64" edge="1" parent="1" source="trig_build" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="i_cE2kLSGhIXNoHwnVfD-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="trig_build" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;align=left;spacing=10;dashed=1;" value="&lt;b&gt;Trigger A: 用户侧构建&lt;/b&gt;&#xa;(Build/Install Time)&#xa;----------------------------&#xa;- 恶意安装脚本 (pre-install)&#xa;- 编译期环境探测&#xa;- 依赖解析阶段攻击" vertex="1">
-          <mxGeometry height="120" width="200" x="1500" y="260" as="geometry" />
+          <mxGeometry height="120" width="200" x="760" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-65" edge="1" parent="1" source="trig_run" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="i_cE2kLSGhIXNoHwnVfD-37">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="trig_run" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;align=left;spacing=10;" value="&lt;b&gt;Trigger B: 用户侧运行&lt;/b&gt;&#xa;(Run Time)&#xa;----------------------------&#xa;- 恶意负载执行 (Payload)&#xa;- 数据窃取 / C2 连接&#xa;- 挖矿 / 勒索 / 逻辑炸弹" vertex="1">
-          <mxGeometry height="120" width="200" x="1500" y="400" as="geometry" />
+          <mxGeometry height="120" width="200" x="760" y="480" as="geometry" />
         </mxCell>
-        <mxCell id="arr_build" edge="1" parent="1" source="router" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeColor=#b85450;rounded=1;" target="trig_build" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1460" y="390" />
-              <mxPoint x="1460" y="320" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="arr_run" edge="1" parent="1" source="router" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeColor=#9673a6;rounded=1;" target="trig_run" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1460" y="390" />
-              <mxPoint x="1460" y="460" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="flow_arrow" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#e1e1e1;strokeColor=none;opacity=30;" value="">
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-1" edge="1" parent="1" source="i_cE2kLSGhIXNoHwnVfD-37" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="60" y="630" as="sourcePoint" />
-            <mxPoint x="1240" y="630" as="targetPoint" />
+            <mxPoint x="40" y="440" as="sourcePoint" />
+            <mxPoint x="980" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="flow_label" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#666666;fontStyle=1" value="Software Supply Chain Flow" vertex="1">
-          <mxGeometry height="20" width="300" x="500" y="640" as="geometry" />
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-3" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="供应链外的信任交互环节" vertex="1">
+          <mxGeometry height="80" width="200" x="280" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-4" parent="i_cE2kLSGhIXNoHwnVfD-3" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="- 社会工程&lt;div&gt;- 鱼叉攻击&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-22" edge="1" parent="1" style="shape=flexArrow;endArrow=none;html=1;rounded=0;endFill=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="i_cE2kLSGhIXNoHwnVfD-20" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="40" y="440" as="sourcePoint" />
+            <mxPoint x="1681" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="130" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-27" edge="1" parent="1" source="i_cE2kLSGhIXNoHwnVfD-20" style="shape=flexArrow;endArrow=none;html=1;rounded=0;endFill=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="i_cE2kLSGhIXNoHwnVfD-26" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="440" as="sourcePoint" />
+            <mxPoint x="1681" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-53" edge="1" parent="1" source="i_cE2kLSGhIXNoHwnVfD-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" target="pre_source">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-26" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="230" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-29" edge="1" parent="1" source="i_cE2kLSGhIXNoHwnVfD-26" style="shape=flexArrow;endArrow=none;html=1;rounded=0;endFill=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="i_cE2kLSGhIXNoHwnVfD-28" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="210" y="440" as="sourcePoint" />
+            <mxPoint x="1681" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-61" edge="1" parent="1" source="i_cE2kLSGhIXNoHwnVfD-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" target="pre_cred">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-28" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="330" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-31" edge="1" parent="1" source="i_cE2kLSGhIXNoHwnVfD-28" style="shape=flexArrow;endArrow=none;html=1;rounded=0;endFill=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="i_cE2kLSGhIXNoHwnVfD-30" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="290" y="440" as="sourcePoint" />
+            <mxPoint x="1040" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="430" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-33" edge="1" parent="1" source="i_cE2kLSGhIXNoHwnVfD-30" style="shape=flexArrow;endArrow=none;html=1;rounded=0;endFill=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="i_cE2kLSGhIXNoHwnVfD-32" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="370" y="440" as="sourcePoint" />
+            <mxPoint x="1040" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-32" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="530" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-36" edge="1" parent="1" source="i_cE2kLSGhIXNoHwnVfD-32" style="shape=flexArrow;endArrow=none;html=1;rounded=0;endFill=0;fillColor=#dae8fc;gradientDirection=east;strokeColor=#6c8ebf;gradientColor=#F8CECC;" target="i_cE2kLSGhIXNoHwnVfD-35" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="550" y="440" as="sourcePoint" />
+            <mxPoint x="1040" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-35" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="730" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-40" edge="1" parent="1" source="i_cE2kLSGhIXNoHwnVfD-35" style="shape=flexArrow;endArrow=none;html=1;rounded=0;endFill=0;fillColor=#f8cecc;strokeColor=#b85450;" target="i_cE2kLSGhIXNoHwnVfD-37" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="750" y="440" as="sourcePoint" />
+            <mxPoint x="1040" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-37" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="830" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-46" edge="1" parent="1" source="list1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="i_cE2kLSGhIXNoHwnVfD-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-51" edge="1" parent="1" source="list4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="i_cE2kLSGhIXNoHwnVfD-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-62" edge="1" parent="1" source="i_cE2kLSGhIXNoHwnVfD-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="pre_source">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-63" edge="1" parent="1" source="i_cE2kLSGhIXNoHwnVfD-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="pre_cred">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
