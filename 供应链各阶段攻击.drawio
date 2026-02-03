@@ -49,17 +49,17 @@
         <mxCell id="list5" parent="col5" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;[Platform]&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;注: 攻击在此处从供应链进入用户侧&lt;/i&gt;" vertex="1">
           <mxGeometry height="120" width="200" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="i_cE2kLSGhIXNoHwnVfD-64" edge="1" parent="1" source="trig_build" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="i_cE2kLSGhIXNoHwnVfD-35">
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-64" edge="1" parent="1" source="trig_build" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="i_cE2kLSGhIXNoHwnVfD-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="trig_build" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;align=left;spacing=10;dashed=1;" value="&lt;b&gt;Trigger A: 用户侧构建&lt;/b&gt;&#xa;(Build/Install Time)&#xa;----------------------------&#xa;- 恶意安装脚本 (pre-install)&#xa;- 编译期环境探测&#xa;- 依赖解析阶段攻击" vertex="1">
           <mxGeometry height="120" width="200" x="760" y="240" as="geometry" />
         </mxCell>
-        <mxCell id="i_cE2kLSGhIXNoHwnVfD-65" edge="1" parent="1" source="trig_run" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="i_cE2kLSGhIXNoHwnVfD-37">
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-65" edge="1" parent="1" source="trig_run" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="i_cE2kLSGhIXNoHwnVfD-37">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="trig_run" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;align=left;spacing=10;" value="&lt;b&gt;Trigger B: 用户侧运行&lt;/b&gt;&#xa;(Run Time)&#xa;----------------------------&#xa;- 恶意负载执行 (Payload)&#xa;- 数据窃取 / C2 连接&#xa;- 挖矿 / 勒索 / 逻辑炸弹" vertex="1">
-          <mxGeometry height="120" width="200" x="760" y="480" as="geometry" />
+          <mxGeometry height="120" width="200" x="760" y="520" as="geometry" />
         </mxCell>
         <mxCell id="i_cE2kLSGhIXNoHwnVfD-1" edge="1" parent="1" source="i_cE2kLSGhIXNoHwnVfD-37" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
