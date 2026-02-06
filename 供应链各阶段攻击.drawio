@@ -10,55 +10,55 @@
         <mxCell id="pre_cred" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacing=10;fontColor=#333333;dashed=1;dashPattern=1 2;" value="&lt;b&gt;凭证与密钥窃取&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="110" x="370" y="350" as="geometry" />
         </mxCell>
-        <mxCell id="col1" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="I. 需求与设计&#xa;(Requirements &amp; Design)" vertex="1">
+        <mxCell id="col1" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="I. 需求与设计" vertex="1">
           <mxGeometry height="160" width="200" x="40" y="200" as="geometry" />
         </mxCell>
-        <mxCell id="list1" parent="col1" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="- 禁用安全特性 (e.g., XZ IFUNC)&#xa;- 算法后门设计 (Dual_EC_DRBG)&#xa;- 逻辑设计缺陷&#xa;- 依赖选型投毒" vertex="1">
+        <mxCell id="list1" parent="col1" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;需求操纵威胁&lt;/b&gt;&amp;nbsp;[XZ IFUNC]&lt;br&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;设计后门威胁&lt;/b&gt;&amp;nbsp;[Dual_EC_DRBG, Trezor-crypto]&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="200" y="40" as="geometry" />
         </mxCell>
         <mxCell id="i_cE2kLSGhIXNoHwnVfD-49" edge="1" parent="1" source="col2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="i_cE2kLSGhIXNoHwnVfD-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="col2" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="II. 编程&#xa;(Coding / SCM)" vertex="1">
+        <mxCell id="col2" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="II. 编程" vertex="1">
           <mxGeometry height="160" width="200" x="40" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="list2" parent="col2" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;[Dependencies]&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;* 前置关联: 可能被 [Precursor A] 增强&lt;/i&gt;" vertex="1">
+        <mxCell id="list2" parent="col2" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;源码配置工件威胁&lt;/b&gt;&lt;div&gt;&lt;b&gt;依赖配置工件威胁&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;非文本工件威胁&lt;/b&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="200" y="40" as="geometry" />
         </mxCell>
         <mxCell id="i_cE2kLSGhIXNoHwnVfD-50" edge="1" parent="1" source="col3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="i_cE2kLSGhIXNoHwnVfD-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="col3" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="III. 构建与集成&#xa;(Build &amp; CI/CD)" vertex="1">
+        <mxCell id="col3" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="III. 构建与集成" vertex="1">
           <mxGeometry height="160" width="200" x="280" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="list3" parent="col3" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;[Environment]&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;* 前置关联: [Precursor A] 用于针对性注入&lt;/i&gt;" vertex="1">
+        <mxCell id="list3" parent="col3" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;恶意构建工具威胁&lt;/b&gt;&lt;div&gt;&lt;b&gt;构建配置威胁&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;自动化集成设施与流水线威胁&lt;/b&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="200" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="col4" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="IV. 开发侧交付&#xa;(Packaging &amp; Signing)" vertex="1">
+        <mxCell id="col4" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="IV. 开发侧交付" vertex="1">
           <mxGeometry height="160" width="200" x="520" y="200" as="geometry" />
         </mxCell>
-        <mxCell id="list4" parent="col4" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;br&gt;&lt;br&gt;&lt;i&gt;注: 此阶段强依赖凭证失陷&lt;/i&gt;" vertex="1">
+        <mxCell id="list4" parent="col4" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;打包工件操纵威胁&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;劫持交付链路的篡改威胁&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="200" y="40" as="geometry" />
         </mxCell>
         <mxCell id="i_cE2kLSGhIXNoHwnVfD-52" edge="1" parent="1" source="col5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="i_cE2kLSGhIXNoHwnVfD-32">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="col5" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="V. 分发与传播&#xa;(Distribution)" vertex="1">
+        <mxCell id="col5" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="V. 用户侧交付与分发" vertex="1">
           <mxGeometry height="160" width="200" x="520" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="list5" parent="col5" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;[Platform]&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;注: 攻击在此处从供应链进入用户侧&lt;/i&gt;" vertex="1">
+        <mxCell id="list5" parent="col5" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;b&gt;基于身份凭据的信誉冒用威胁&lt;/b&gt;&lt;div&gt;&lt;b&gt;交付/分发基础设施劫持威胁&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;分发平台信誉伪装威胁&lt;/b&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="200" y="40" as="geometry" />
         </mxCell>
         <mxCell id="i_cE2kLSGhIXNoHwnVfD-64" edge="1" parent="1" source="trig_build" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="i_cE2kLSGhIXNoHwnVfD-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="trig_build" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;align=left;spacing=10;dashed=1;" value="&lt;b&gt;Trigger A: 用户侧构建&lt;/b&gt;&#xa;(Build/Install Time)&#xa;----------------------------&#xa;- 恶意安装脚本 (pre-install)&#xa;- 编译期环境探测&#xa;- 依赖解析阶段攻击" vertex="1">
+        <mxCell id="trig_build" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;align=left;spacing=10;dashed=1;" value="&lt;b&gt;触发点 A: 用户侧构建&lt;/b&gt;&lt;br&gt;----------------------------&lt;br&gt;- 恶意安装脚本 (pre-install)&lt;br&gt;- 编译期环境探测&lt;br&gt;- 依赖解析阶段攻击" vertex="1">
           <mxGeometry height="120" width="200" x="760" y="240" as="geometry" />
         </mxCell>
         <mxCell id="i_cE2kLSGhIXNoHwnVfD-65" edge="1" parent="1" source="trig_run" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="i_cE2kLSGhIXNoHwnVfD-37">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="trig_run" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;align=left;spacing=10;" value="&lt;b&gt;Trigger B: 用户侧运行&lt;/b&gt;&#xa;(Run Time)&#xa;----------------------------&#xa;- 恶意负载执行 (Payload)&#xa;- 数据窃取 / C2 连接&#xa;- 挖矿 / 勒索 / 逻辑炸弹" vertex="1">
+        <mxCell id="trig_run" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;align=left;spacing=10;" value="&lt;b&gt;触发点 B: 用户侧运行&lt;/b&gt;&lt;br&gt;----------------------------&lt;br&gt;- 恶意负载执行 (Payload)&lt;br&gt;- 数据窃取 / C2 连接&lt;br&gt;- 挖矿 / 勒索 / 逻辑炸弹" vertex="1">
           <mxGeometry height="120" width="200" x="760" y="520" as="geometry" />
         </mxCell>
         <mxCell id="i_cE2kLSGhIXNoHwnVfD-1" edge="1" parent="1" source="i_cE2kLSGhIXNoHwnVfD-37" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" value="">
@@ -68,10 +68,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="i_cE2kLSGhIXNoHwnVfD-3" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="供应链外的信任交互环节" vertex="1">
-          <mxGeometry height="80" width="200" x="280" y="240" as="geometry" />
+          <mxGeometry height="120" width="200" x="280" y="200" as="geometry" />
         </mxCell>
-        <mxCell id="i_cE2kLSGhIXNoHwnVfD-4" parent="i_cE2kLSGhIXNoHwnVfD-3" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="- 社会工程&lt;div&gt;- 鱼叉攻击&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="200" y="40" as="geometry" />
+        <mxCell id="i_cE2kLSGhIXNoHwnVfD-4" parent="i_cE2kLSGhIXNoHwnVfD-3" style="text;html=1;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;overflow=hidden;" value="&lt;div&gt;&lt;b&gt;社会工程攻击&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;鱼叉攻击&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="200" y="40" as="geometry" />
         </mxCell>
         <mxCell id="i_cE2kLSGhIXNoHwnVfD-22" edge="1" parent="1" style="shape=flexArrow;endArrow=none;html=1;rounded=0;endFill=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="i_cE2kLSGhIXNoHwnVfD-20" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
